@@ -1,0 +1,16 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]  # Run on pushes to the main branch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Run on Ubuntu virtual machine
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout code from the repository
+      - name: Install dependencies
+        run: echo "Installing dependencies..."  # Simulated step for now
+      - name: Run tests
+        run: echo "Running tests..."  # Simulated step for now
